@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 
 module.exports = {
     entry: {main: "./src/js/index.js"},
@@ -28,6 +29,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|svg)$/,
+                exclude: /icon/,
                 use: {
                     loader: "file-loader",
                     options: {
@@ -37,7 +39,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(woff2?|ttf)/,
+                test: /\.(woff2?|eot|ttf)/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -50,13 +52,16 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: "style.css"
         }),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             filename: "index.html"
+        }),
+        new SVGSpritemapPlugin("src/img/icon/*.svg", {
+            output: {
+                filename: "img/spritemap.svg"
+            }
         })
     ]
-}
+};

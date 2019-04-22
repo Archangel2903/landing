@@ -3,22 +3,101 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
     <title>Главная</title>
 </head>
+
 <body class="loaded">
 <!-- BODY -->
 
 <div class="main-wrapper">
     <!-- HEADER -->
     <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="index.html" class="logo gradient-text">
+                        <img src="<%= require('./img/logo.png') %>" class="logo__img" alt="logo" title="logo">
+                        tajam
+                    </a>
+                </div>
 
+                <div class="col-lg-10">
+                    <div class="main-menu text-right">
+                        <button class="main-menu__burger"></button>
+
+                        <nav class="main-menu__nav">
+                            <a href="#1" class="main-menu__nav-link">HOME</a>
+                            <a href="#2" class="main-menu__nav-link">ABOUT</a>
+                            <a href="#3" class="main-menu__nav-link">EXPERTISE</a>
+                            <a href="#4" class="main-menu__nav-link">TEAMS</a>
+                            <a href="#5" class="main-menu__nav-link">WORKS</a>
+                            <a href="#6" class="main-menu__nav-link">PEOPLE SAY</a>
+                            <a href="#7" class="main-menu__nav-link">CONTACT</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- HEADER END -->
 
     <!-- CONTENT -->
     <main class="content">
-        <img src="<%= require('./img/loader.svg') %>" alt="img">
+
+        <section class="section main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="slick-slider">
+                            <div class="slide">
+                                <div class="title-block">
+                                    <h2 class="title">We are awesome creative agency</h2>
+                                </div>
+                                <p class="slide__text text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                                    mauris. Morbi accumsan ipsum velit.</p>
+                            </div>
+
+                            <div class="slide">
+                                <div class="title-block">
+                                    <h2 class="title">We are awesome creative agency</h2>
+                                </div>
+                                <p class="slide__text text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                                    mauris. Morbi accumsan ipsum velit.</p>
+                            </div>
+
+                            <div class="slide">
+                                <div class="title-block">
+                                    <h2 class="title">We are awesome creative agency</h2>
+                                </div>
+                                <p class="slide__text text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                                    mauris. Morbi accumsan ipsum velit.</p>
+                            </div>
+
+                            <div class="slide">
+                                <div class="title-block">
+                                    <h2 class="title">We are awesome creative agency</h2>
+                                </div>
+                                <p class="slide__text text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                                    mauris. Morbi accumsan ipsum velit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-bg">
+                <img src="<%= require('./img/logo.png') %>" class="section-bg__img" alt="bg-1" title="">
+            </div>
+        </section>
+
+        <svg>
+            <use xlink:href="img/spritemap.svg#sprite-loader"></use>
+        </svg>
     </main>
     <!-- CONTENT END -->
 
@@ -31,7 +110,6 @@
 
 <div class="icon-load"></div>
 <!-- BODY END   -->
-
 
 
 </body>

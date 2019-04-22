@@ -1,1 +1,101 @@
 $fonts-path: '../fonts/';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fonts-path}Roboto-Bold.eot');
+  src: url('#{$fonts-path}Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Roboto-Bold.woff2') format('woff2'),
+  url('#{$fonts-path}Roboto-Bold.woff') format('woff'),
+  url('#{$fonts-path}Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fonts-path}Roboto-Medium.eot');
+  src: url('#{$fonts-path}Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Roboto-Medium.woff2') format('woff2'),
+  url('#{$fonts-path}Roboto-Medium.woff') format('woff'),
+  url('#{$fonts-path}Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fonts-path}Roboto-Regular.eot');
+  src: url('#{$fonts-path}Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Roboto-Regular.woff2') format('woff2'),
+  url('#{$fonts-path}Roboto-Regular.woff') format('woff'),
+  url('#{$fonts-path}Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fonts-path}Roboto-Light.eot');
+  src: url('#{$fonts-path}Roboto-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Roboto-Light.woff2') format('woff2'),
+  url('#{$fonts-path}Roboto-Light.woff') format('woff'),
+  url('#{$fonts-path}Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fonts-path}Roboto-Thin.eot');
+  src: url('#{$fonts-path}Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Roboto-Thin.woff2') format('woff2'),
+  url('#{$fonts-path}Roboto-Thin.woff') format('woff'),
+  url('#{$fonts-path}Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('#{$fonts-path}PlayfairDisplay-Black.eot');
+  src: url('#{$fonts-path}PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}PlayfairDisplay-Black.woff2') format('woff2'),
+  url('#{$fonts-path}PlayfairDisplay-Black.woff') format('woff'),
+  url('#{$fonts-path}PlayfairDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('#{$fonts-path}PlayfairDisplay-Regular.eot');
+  src: url('#{$fonts-path}PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}PlayfairDisplay-Regular.woff2') format('woff2'),
+  url('#{$fonts-path}PlayfairDisplay-Regular.woff') format('woff'),
+  url('#{$fonts-path}PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('#{$fonts-path}PlayfairDisplay-Bold.eot');
+  src: url('#{$fonts-path}PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}PlayfairDisplay-Bold.woff2') format('woff2'),
+  url('#{$fonts-path}PlayfairDisplay-Bold.woff') format('woff'),
+  url('#{$fonts-path}PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HammersmithOne';
+  src: url('#{$fonts-path}HammersmithOne-Regular.eot');
+  src: url('#{$fonts-path}HammersmithOne-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}HammersmithOne-Regular.woff2') format('woff2'),
+  url('#{$fonts-path}HammersmithOne-Regular.woff') format('woff'),
+  url('#{$fonts-path}HammersmithOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

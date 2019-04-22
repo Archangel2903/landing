@@ -1,9 +1,10 @@
-import 'jquery';
-import 'jquery-migrate';
-import 'bootstrap';
 import '../scss/main.scss';
+import $ from 'jquery';
+import 'bootstrap';
+import 'popper.js';
+import 'slick-carousel';
 
-$(window).load(function () {
+$(window).on('load', function () {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         $('body').addClass('ios');
     } else {
@@ -11,4 +12,8 @@ $(window).load(function () {
     }
 
     $('body').removeClass('loaded');
+});
+
+$(function () {
+    $('.slick-slider').slick
 });

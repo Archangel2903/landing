@@ -1,3 +1,9 @@
+@mixin radius($border-radius) {
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
 @mixin transition($default-transition) {
   -webkit-transition: $default-transition;
   -moz-transition: $default-transition;
@@ -6,18 +12,20 @@
   transition: $default-transition;
 }
 
+@mixin transform ($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
 @mixin translate($x, $y) {
   -webkit-transform: translate($x, $y);
   -moz-transform: translate($x, $y);
   -ms-transform: translate($x, $y);
   -o-transform: translate($x, $y);
   transform: translate($x, $y);
-}
-
-@mixin radius($border-radius) {
-  -webkit-border-radius: $border-radius;
-  -moz-border-radius: $border-radius;
-  border-radius: $border-radius;
 }
 
 @mixin rotate($rotate) {
@@ -61,16 +69,4 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-}
-
-@mixin vertical_center_transform() {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
 }

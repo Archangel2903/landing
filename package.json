@@ -4,12 +4,13 @@
   "description": "blank project",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "webpack", "project_"
+    "webpack",
+    "project_"
   ],
   "author": "DzenMan",
   "license": "ISC",
@@ -30,8 +31,11 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.0",
     "jquery-migrate": "^3.0.1",
-    "bootstrap": "^4.3.1"
+    "popper.js": "^1.15.0",
+    "slick-carousel": "^1.8.1",
+    "svg-spritemap-webpack-plugin": "^3.3.0"
   }
 }
