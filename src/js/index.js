@@ -12,6 +12,3 @@ $(window).load(function () {
 
     $('body').removeClass('loaded');
 });
-
-let a = "Hello world";
-console.log(a);
