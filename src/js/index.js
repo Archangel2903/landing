@@ -15,5 +15,11 @@ $(window).on('load', function () {
 });
 
 $(function () {
-    $('.slick-slider').slick
+    $('.main-section .slick-slider').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });

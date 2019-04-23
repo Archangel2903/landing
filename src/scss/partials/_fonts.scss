@@ -1,5 +1,6 @@
 $fonts-path: '../fonts/';
 
+// Roboto
 @font-face {
   font-family: 'Roboto';
   src: url('#{$fonts-path}Roboto-Bold.eot');
@@ -55,6 +56,7 @@ $fonts-path: '../fonts/';
   font-style: normal;
 }
 
+// Playfair Display
 @font-face {
   font-family: 'Playfair Display';
   src: url('#{$fonts-path}PlayfairDisplay-Black.eot');
@@ -88,6 +90,7 @@ $fonts-path: '../fonts/';
   font-style: normal;
 }
 
+// HammersmithOne
 @font-face {
   font-family: 'HammersmithOne';
   src: url('#{$fonts-path}HammersmithOne-Regular.eot');
@@ -98,4 +101,3 @@ $fonts-path: '../fonts/';
   font-weight: normal;
   font-style: normal;
 }
-

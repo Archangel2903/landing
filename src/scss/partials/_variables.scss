@@ -1,21 +1,26 @@
-$container-max-widths: (
-  xl: 960px
-);
-$primary: #ff0000;
-
-$main-first-color: #311d5e; //#311d5e
-$main-second-color: #00dfcf; //#00dfcf
+$main-first-color: #311d5e;
+$main-second-color: #00dfcf;
 $main-third-color: #00f;
-
-$gradient-first-color: $main-second-color;
-$gradient-second-color: #4aa3cb;
 
 $font-family-base: 'Roboto', sans-serif;
 $font-family-custom: 'Playfair Display', serif;
 $font-family-unique: 'HammersmithOne', sans-serif;
 
-//$font-size-base: .875rem;
-
 $text-color: #413d4b;
 
 $default-transition: all .35s ease-in-out 0s;
+
+$gradient-txt-first-color: $main-second-color;
+$gradient-txt-second-color: #4aa3cb;
+
+$gradient-bg-first-color: #09052f;
+$gradient-bg-second-color: $main-first-color;
+
+$gray-900: $text-color;
+$primary: #ff0000;
+
+$container-max-widths: (
+        xl: 960px
+);
+
+$grid-gutter-width: 20px;
