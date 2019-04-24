@@ -26,13 +26,24 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-size: 14px;
+}
+
+body {
+  font-weight: 300;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
@@ -41,14 +52,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 blockquote, q {
   quotes: none;
-}
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+  &:before {
+    content: '“';
+    font-size: 2rem;
+  }
+  &:after {
+    content: '„';
+    font-size: 2rem;
+  }
 }
 
 table {
@@ -58,13 +70,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   border-width: 0;
-}
-
-html {
-  height: 100%;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  font-size: 14px;
 }
 
 input,

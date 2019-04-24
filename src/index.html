@@ -120,24 +120,272 @@
         </section>
 
         <section class="section about-us-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="<%= require('./img/logo-fill.png') %>" class="about-us-logo" alt="logo" title="tajem-logo">
-                    </div>
-                    <div class="col-7">
-                        <div class="title">our story</div>
-                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-                            consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+            <div class="about-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="<%= require('./img/logo-fill.png') %>" class="about-us__logo" alt="logo" title="tajem-logo">
+                        </div>
+                        <div class="col-7">
+                            <div class="title">our story</div>
+                            <p class="about-us__text font-weight-light">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                sollicitudin, lorem quis bibendum auctor, nisi elit
+                                consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
 
-                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent
-                            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                            <p class="about-us__text font-weight-light">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                                consequat auctor eu in elit. Class aptent
+                                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
-                        <a href="#more" class="button">learn more</a>
+                            <a href="#more" class="button">learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="section video-section">
+            <div class="section-bg">
+                <img src="<%= require('./img/section-bg-02.jpg') %>" class="section-bg__img" alt="bg-1" title="">
+            </div>
+
+            <div class="container">
+                <div class="multimedia">
+                    <div class="multimedia__video">
+                        <button class="multimedia__video-close"></button>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="multimedia__placeholder">
+                        <button class="multimedia__button" data-text="WATCH OUR STORY">
+                            <svg>
+                                <use xlink:href="img/spritemap.svg#sprite-play-circle"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section expertise-section">
+            <div class="container">
+                <div class="title-bloc">
+                    <p class="title">EXPERTISE</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                </div>
+                <div class="expertise">
+                    <div class="expertise__box">
+                        <img src="<%= require('./img/exp-ico_01.png') %>" class="expertise__img" alt="" title="">
+                        <p class="expertise__caption">WEB DESIGN & DEVELOPMENT</p>
+                        <span class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</span>
+                    </div>
+
+                    <div class="expertise__box">
+                        <img src="<%= require('./img/exp-ico_02.png') %>" class="expertise__img" alt="" title="">
+                        <p class="expertise__caption">BRANDING IDENTITY</p>
+                        <span class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</span>
+                    </div>
+
+                    <div class="expertise__box">
+                        <img src="<%= require('./img/exp-ico_03.png') %>" class="expertise__img" alt="" title="">
+                        <p class="expertise__caption">MOBILE APP</p>
+                        <span class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</span>
+                    </div>
+
+                    <div class="expertise__box">
+                        <img src="<%= require('./img/exp-ico_04.png') %>" class="expertise__img" alt="" title="">
+                        <p class="expertise__caption">SEARCH ENGINE OPTIMIZATION</p>
+                        <span class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</span>
+                    </div>
+
+                    <div class="expertise__box">
+                        <img src="<%= require('./img/exp-ico_05.png') %>" class="expertise__img" alt="" title="">
+                        <p class="expertise__caption">GAME DEVELOPMENT</p>
+                        <span class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</span>
+                    </div>
+
+                    <div class="expertise__box">
+                        <img src="<%= require('./img/exp-ico_06.png') %>" class="expertise__img" alt="" title="">
+                        <p class="expertise__caption">MADE WITH LOVE</p>
+                        <span class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section team-section">
+            <div class="section-bg">
+                <img src="<%= require('./img/section-bg-03.jpg') %>" class="section-bg__img" alt="bg-1" title="">
+            </div>
+
+            <div class="container">
+                <div class="title-bloc">
+                    <p class="title">MEET OUR AMAZING TEAM</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                </div>
+                <div class="team">
+                    <div class="team__card">
+                        <img src="<%= require('./img/team-img_01.png') %>" class="team__photo" alt="team-photo" title="">
+                        <p class="team__caption">SEMF UCUK</p>
+                        <p class="team__text">CEO & FOUNDER</p>
+                    </div>
+
+                    <div class="team__card">
+                        <img src="<%= require('./img/team-img_01.png') %>" class="team__photo" alt="team-photo" title="">
+                        <p class="team__caption">DIK ADALIN</p>
+                        <p class="team__text">ENGINEERING</p>
+                    </div>
+
+                    <div class="team__card">
+                        <img src="<%= require('./img/team-img_01.png') %>" class="team__photo" alt="team-photo" title="">
+                        <p class="team__caption">JENG KOL</p>
+                        <p class="team__text">DESIGNER</p>
+                    </div>
+
+                    <div class="team__card">
+                        <img src="<%= require('./img/team-img_01.png') %>" class="team__photo" alt="team-photo" title="">
+                        <p class="team__caption">PET ROMAK</p>
+                        <p class="team__text">MARKETING</p>
+                    </div>
+                </div>
+
+                <p>Become part of our dream team, let’s join us !</p>
+
+                <a href="#" class="button">WE ARE HIRING</a>
+            </div>
+        </section>
+
+        <section class="section works-section">
+            <div class="container">
+                <p class="title">OUR WORKS
+                    <a href="#go-to" class="go-to">See All Project in dribbble</a>
+                </p>
+            </div>
+
+            <div class="works">
+                <a href="works__01.jpg" class="works__item"><img src="<%= require('./img/works_01.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__02.jpg" class="works__item"><img src="<%= require('./img/works_02.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__03.jpg" class="works__item"><img src="<%= require('./img/works_03.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__04.jpg" class="works__item"><img src="<%= require('./img/works_04.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__05.jpg" class="works__item"><img src="<%= require('./img/works_05.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__06.jpg" class="works__item"><img src="<%= require('./img/works_06.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__01.jpg" class="works__item"><img src="<%= require('./img/works_01.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__02.jpg" class="works__item"><img src="<%= require('./img/works_02.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__03.jpg" class="works__item"><img src="<%= require('./img/works_03.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__04.jpg" class="works__item"><img src="<%= require('./img/works_04.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__05.jpg" class="works__item"><img src="<%= require('./img/works_05.png') %>" class="works__img" alt="" title=""></a>
+                <a href="works__06.jpg" class="works__item"><img src="<%= require('./img/works_06.png') %>" class="works__img" alt="" title=""></a>
+            </div>
+
+            <button class="button">load more</button>
+        </section>
+
+        <section class="section section-reviews">
+            <div class="section-bg">
+                <img src="<%= require('./img/section-bg-04.jpg') %>" class="section-bg__img" alt="bg-1" title="">
+            </div>
+
+            <div class="container">
+                <div class="reviews-wrap">
+                    <div class="reviews-message slick-slider">
+                        <div class="reviews-message__slide">
+                            <p class="reviews-message__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+
+                            <p class="reviews-message__caption">JANE GALADRIEL<span>CEO TENGKUREP</span></p>
+                        </div>
+                        <div class="reviews-message__slide">
+                            <p class="reviews-message__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+
+                            <p class="reviews-message__caption">JANE GALADRIEL<span>CEO TENGKUREP</span></p>
+                        </div>
+                        <div class="reviews-message__slide">
+                            <p class="reviews-message__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+
+                            <p class="reviews-message__caption">JANE GALADRIEL<span>CEO TENGKUREP</span></p>
+                        </div>
+                        <div class="reviews-message__slide">
+                            <p class="reviews-message__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+
+                            <p class="reviews-message__caption">JANE GALADRIEL<span>CEO TENGKUREP</span></p>
+                        </div>
+                        <div class="reviews-message__slide">
+                            <p class="reviews-message__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+
+                            <p class="reviews-message__caption">JANE GALADRIEL<span>CEO TENGKUREP</span></p>
+                        </div>
+                    </div>
+
+                    <div class="reviews-nav slick-slider">
+                        <div class="reviews-nav__slide"><img src="<%= require('./img/reviews-img_01.png') %>" alt="" class="reviews-nav__photo"></div>
+                        <div class="reviews-nav__slide"><img src="<%= require('./img/reviews-img_02.png') %>" alt="" class="reviews-nav__photo"></div>
+                        <div class="reviews-nav__slide"><img src="<%= require('./img/reviews-img_03.png') %>" alt="" class="reviews-nav__photo"></div>
+                        <div class="reviews-nav__slide"><img src="<%= require('./img/reviews-img_04.png') %>" alt="" class="reviews-nav__photo"></div>
+                        <div class="reviews-nav__slide"><img src="<%= require('./img/reviews-img_05.png') %>" alt="" class="reviews-nav__photo"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section information-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mailing">
+                            <p class="title">GIVE US A GOOD NEWS</p>
+
+                            <form action="" method="" name="" id="" class="mailing__form">
+                                <label class="mailing__form-row">
+                                    <input type="text" class="mailing__input" placeholder="Name">
+                                </label>
+
+                                <label class="mailing__form-row">
+                                    <input type="email" class="mailing__input" placeholder="Email">
+                                </label>
+
+                                <label class="mailing__form-row">
+                                    <input type="text" class="mailing__input" placeholder="Subject">
+                                </label>
+
+                                <label class="mailing__form-row">
+                                    <textarea name="" class="mailing__input mailing__input_textarea" placeholder="Your Massage"></textarea>
+                                </label>
+
+                                <input type="submit" value="submit" class="mailing__submit button">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-5 offset-1">
+                        <p class="title">OUR HAPPY CLIENT</p>
+                        <div class="partners">
+                            <img src="<%= require('./img/partners_01.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_02.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_03.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_04.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_05.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_06.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_07.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_08.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_09.png') %>" class="partners__img" alt="" title="">
+                            <img src="<%= require('./img/partners_10.png') %>" class="partners__img" alt="" title="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section"></section>
 
         <svg>
             <use xlink:href="img/spritemap.svg#sprite-loader"></use>
