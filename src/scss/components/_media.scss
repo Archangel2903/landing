@@ -1,0 +1,94 @@
+@media screen and (min-width: 576px) {
+  .expertise {
+    grid-template-columns: repeat(auto-fill, minmax(50%, auto));
+
+    &__box {
+      &:nth-child(even) {
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      &:nth-last-child(-n + 2) {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .works {
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  }
+
+  .works-wrapper {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    position: static;
+
+    &__burger {
+      display: none;
+    }
+
+    &__nav {
+      display: block !important;
+      position: static;
+      padding: 0;
+      background: none;
+    }
+
+    &__nav-link {
+      display: inline-block;
+      font-size: 1rem;
+
+      &:not(:last-child) {
+        margin: 0 20px 0 0;
+      }
+
+      &:nth-child(odd), &:nth-child(even) {
+        @include transform(translate(0, 0) rotate(0));
+      }
+    }
+  }
+
+  .expertise {
+    grid-template-columns: repeat(auto-fill, minmax(33%, auto));
+
+    &__box {
+      border-left: 1px solid rgba(0, 0, 0, 0.08);
+
+      &:nth-child(3n + 1) {
+        border-left: none;
+      }
+
+      &:nth-last-child(-n + 3) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .works {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .works {
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+  }
+
+  .partners {
+    grid-gap: 45px 75px;
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 75px), 1fr));
+  }
+
+  .footer-contacts {
+    &__item {
+      justify-content: flex-start;
+    }
+  }
+
+  .social-nav {
+    justify-content: flex-start;
+  }
+}

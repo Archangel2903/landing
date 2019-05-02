@@ -1,7 +1,3 @@
-.main-wrapper {
-  overflow: hidden;
-}
-
 /*************************************************
 ********************* CONTENT ********************
 *************************************************/
@@ -315,20 +311,15 @@
 .expertise {
   display: grid;
   grid-gap: 0;
-  grid-template-columns: repeat(auto-fill, minmax(33%, auto));
+  grid-template-columns: repeat(auto-fill, minmax(100%, auto));
+
 
   &__box {
     padding: 35px;
-    border-left: 1px solid rgba(0, 0, 0, .08);
-    border-bottom: 1px solid rgba(0, 0, 0, .08);
     text-align: center;
 
-    &:nth-child(3n + 1) {
-      border-left: none;
-    }
-
-    &:nth-last-child(-n + 3) {
-      border-bottom: none;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, .08);
     }
   }
 
@@ -354,7 +345,7 @@
 
 .team {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(220px, auto));
   grid-gap: 20px;
   margin: 0 0 120px;
 
@@ -389,19 +380,19 @@
 }
 
 .works-wrapper {
-  padding: 70px 0;
+  padding: 35px 0;
 }
 
 .works {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 
   &__item {
 
   }
 
   &__img {
-
+    width: 100%;
   }
 }
 
@@ -493,25 +484,65 @@
 }
 
 .information-section {
-
+  padding: 70px 0;
 }
 
 .mailing {
   &__form {
-
+    margin: 35px 0 0;
   }
 
   &__form-row {
-
+    display: block;
+    margin: 0 0 20px;
   }
 
   &__input {
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    color: $text-color;
+    font-family: $font-family-base;
     &_textarea {
+      min-height: 100px;
+      height: 200px;
+      max-height: 300px;
+      padding: 20px;
+    }
 
+    &::-webkit-input-placeholder {
+      opacity: .5;
+      color: $text-color;
+    }
+    &::-moz-placeholder {
+      opacity: .5;
+      color: $text-color;
+    }
+    &::-ms-input-placeholder {
+      opacity: .5;
+      color: $text-color;
+    }
+    &::placeholder {
+      opacity: .5;
+      color: $text-color;
     }
   }
 
   &__submit {
 
+  }
+}
+
+.partners {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(calc(50% - 40px), 1fr));
+  margin: 45px 0 0;
+
+  &__img {
+    max-width: 100%;
+    margin: auto;
   }
 }

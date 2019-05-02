@@ -10,6 +10,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}Roboto-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +22,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}Roboto-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +34,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -43,6 +46,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}Roboto-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -54,6 +58,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}Roboto-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 // Playfair Display
@@ -66,6 +71,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}PlayfairDisplay-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -77,6 +83,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}PlayfairDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -88,6 +95,7 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 // HammersmithOne
@@ -100,4 +108,5 @@ $fonts-path: '../fonts/';
   url('#{$fonts-path}HammersmithOne-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

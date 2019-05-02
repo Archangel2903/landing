@@ -22,23 +22,110 @@ header {
 }
 
 .main-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
   padding: 20px 0;
 
   &__burger {
-    display: none;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0 5px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 0 15px 0 auto;
+    background: none;
+
+    &-line {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: calc(100% - 10px);
+      height: 1px;
+      margin: 0 0 5px;
+      background: #aaa;
+      @include transition($default-transition);
+      @include transform(translate(0, -50%));
+
+      &:nth-child(1) {
+        top: 30%;
+      }
+      &:nth-child(2) {}
+      &:nth-child(3) {
+        top: 70%;
+      }
+    }
+
+    &.active {
+      border-color: $main-second-color;
+
+      .main-menu__burger-line {
+        background: $main-second-color;
+
+        &:nth-child(1) {
+          top: 50%;
+          @include transform(translate(0, -50%) rotate(135deg));
+        }
+        &:nth-child(2) {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:nth-child(3) {
+          top: 50%;
+          @include transform(translate(0, -50%) rotate(-135deg));
+        }
+      }
+    }
   }
+
   &__nav {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
     font-size: .929rem;
+    background: rgba(0, 0, 0, .85);
+
+    &.opened {
+      @for $i from 1 through 7 {
+        .main-menu__nav-link {
+          @include transform(translate(0, 0) rotate(0deg));
+
+          &:nth-child(#{$i}) {
+            @include transition(all .35s ease-in-out .15s*$i);
+          }
+        }
+      }
+    }
   }
+
   &__nav-link {
-    display: inline-block;
+    display: block;
     color: white;
     font-weight: 900;
+    font-size: 1.25rem;
     text-decoration: none !important;
     text-transform: uppercase;
-    &:not(:last-child) {
-      margin-right: 25px;
+    @include transition($default-transition);
+
+    &:nth-child(odd) {
+      @include transform(translate(-100%, -100%) rotate(45deg));
     }
+
+    &:nth-child(even) {
+      @include transform(translate(100%, -100%) rotate(-45deg));
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 15px 0;
+    }
+
     &:hover {
       color: $main-second-color;
     }

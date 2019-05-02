@@ -2,4 +2,155 @@
 ********************* FOOTER *********************
 *************************************************/
 
-footer {}
+footer {
+  position: relative;
+  padding: 70px 0;
+
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-caption {
+  padding: 20px 0 35px;
+  margin: 0;
+}
+
+.footer-text {
+  color: white;
+  line-height: 26px;
+  font-weight: 300;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.footer-contacts {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__icon {
+    margin: 2px 8px 0 0;
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+}
+
+.footer-subscribe {
+  margin: 0 0 25px;
+  opacity: .5;
+
+  &__row {
+
+  }
+
+  &__label {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  &__input {
+    height: 45px;
+    padding: 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+
+    &::-moz-placeholder {
+      color: #fff;
+    }
+
+    &::-ms-input-placeholder {
+      color: #fff;
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    width: 70px;
+    height: 45px;
+    border: 1px solid #fff;
+    vertical-align: top;
+    border: 1px solid #fff;
+
+    svg {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      fill: #000;
+    }
+  }
+}
+
+.social-nav {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: inline-block;
+    padding: 9px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      border-color: $main-second-color;
+
+      .social-nav__icon {
+        fill: $main-second-color;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    @include transition($default-transition);
+  }
+}
+
+.footer-nav {
+  &__link {
+    color: #ffffff;
+    text-decoration: none !important;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      color: $main-second-color;
+    }
+  }
+}
+
+.copyright {
+  margin: 0;
+}
