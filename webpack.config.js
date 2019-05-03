@@ -23,11 +23,13 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    // 'postcss-loader',
                     'sass-loader',
                     {
                         loader: 'sass-loader',
-                        options: { minimize: true }
+                        options: {
+                            outputPath: './dist',
+                            minimize: true
+                        }
                     }
                 ]
             },
@@ -60,7 +62,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
-            filename: "index.html"
+            filename: "index.html",
+            inject: false
         }),
         new SVGSpritemapPlugin("src/img/icon/*.svg", {
             output: {
